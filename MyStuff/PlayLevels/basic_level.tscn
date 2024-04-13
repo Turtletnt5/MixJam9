@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://oy2vxprtqakh" path="res://Imported assets/Cemetery/Grass/EmptyGrassTile.png" id="1_xqw0f"]
 [ext_resource type="PackedScene" uid="uid://dgqurvpqwdugy" path="res://MyStuff/PlayLevels/play_area.tscn" id="2_c3pih"]
 [ext_resource type="Texture2D" uid="uid://ycdmdel1wrqd" path="res://Imported assets/Cemetery/Grass/GrassAlt3.png" id="2_pt48j"]
-[ext_resource type="Texture2D" uid="uid://cru32qvsox4bl" path="res://Imported assets/Cemetery/Structures/Church2.png" id="2_tnwvn"]
 [ext_resource type="Texture2D" uid="uid://c4vqoqyuy3yeg" path="res://Imported assets/Cemetery/Grass/GrassAlt1.png" id="3_lpbq6"]
 [ext_resource type="Texture2D" uid="uid://on1xihwufnxj" path="res://Imported assets/Cemetery/Path/pathStriaghtUp.png" id="4_jrf2h"]
 [ext_resource type="Texture2D" uid="uid://m5bpypanwe6r" path="res://Imported assets/Cemetery/Grass/GrassAlt4.png" id="4_mjh0c"]
@@ -22,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://dx34ymfiafics" path="res://Imported assets/Cemetery/Plants/Bush.png" id="19_s4c6k"]
 [ext_resource type="Texture2D" uid="uid://ck4mxc573xb85" path="res://Imported assets/Cemetery/Plants/Tree2.png" id="20_mhpk1"]
 [ext_resource type="Texture2D" uid="uid://blbqgbekad6w6" path="res://Imported assets/Cemetery/Plants/BushBerry.png" id="20_pr7ok"]
+[ext_resource type="Texture2D" uid="uid://y4rk7bm1187x" path="res://Imported assets/Cemetery/Structures/Church1.png" id="22_ekuf7"]
 
 [node name="Basic Level" type="Node2D"]
 
@@ -103,12 +103,6 @@ texture = ExtResource("5_ptwdc")
 
 [node name="PlayArea" parent="." instance=ExtResource("2_c3pih")]
 position = Vector2(169, 16)
-metadata/_edit_lock_ = true
-
-[node name="Church2" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(111, 183)
-texture = ExtResource("2_tnwvn")
 metadata/_edit_lock_ = true
 
 [node name="Decor" type="Node2D" parent="."]
@@ -294,16 +288,6 @@ metadata/_edit_lock_ = true
 [node name="Bush5" type="Sprite2D" parent="Decor"]
 position = Vector2(46, 137)
 texture = ExtResource("19_s4c6k")
-metadata/_edit_lock_ = true
-
-[node name="BushBerry4" type="Sprite2D" parent="Decor"]
-position = Vector2(69, 197)
-texture = ExtResource("20_pr7ok")
-metadata/_edit_lock_ = true
-
-[node name="BushBerry5" type="Sprite2D" parent="Decor"]
-position = Vector2(68, 175)
-texture = ExtResource("20_pr7ok")
 metadata/_edit_lock_ = true
 
 [node name="BushBerry6" type="Sprite2D" parent="Decor"]
@@ -494,3 +478,8 @@ texture = ExtResource("19_ndmfo")
 [node name="Tree34" type="Sprite2D" parent="Forest"]
 position = Vector2(147, 88)
 texture = ExtResource("20_mhpk1")
+
+[node name="Church1" type="Sprite2D" parent="."]
+position = Vector2(96, 185)
+texture = ExtResource("22_ekuf7")
+metadata/_edit_lock_ = true
