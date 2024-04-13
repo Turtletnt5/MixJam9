@@ -711,7 +711,7 @@ texture = ExtResource("15_nnjy0")
 [node name="Bottom" type="StaticBody2D" parent="Coliders"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Bottom"]
-position = Vector2(56.5, 192)
+position = Vector2(57, 192)
 shape = SubResource("RectangleShape2D_c8nr8")
 
 [node name="Left" type="StaticBody2D" parent="Coliders"]
@@ -799,3 +799,5 @@ texture = ExtResource("27_0rd6k")
 [node name="Grave17" type="Sprite2D" parent="."]
 position = Vector2(86, 128)
 texture = ExtResource("28_psh0r")
+
+[node name="Spawners" type="Node2D" parent="."]

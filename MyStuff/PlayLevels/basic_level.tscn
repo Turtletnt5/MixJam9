@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b6xqmxhcjp5su"]
+[gd_scene load_steps=24 format=3 uid="uid://b6xqmxhcjp5su"]
 
 [ext_resource type="Texture2D" uid="uid://oy2vxprtqakh" path="res://Imported assets/Cemetery/Grass/EmptyGrassTile.png" id="1_xqw0f"]
 [ext_resource type="PackedScene" uid="uid://dgqurvpqwdugy" path="res://MyStuff/PlayLevels/play_area.tscn" id="2_c3pih"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://ck4mxc573xb85" path="res://Imported assets/Cemetery/Plants/Tree2.png" id="20_mhpk1"]
 [ext_resource type="Texture2D" uid="uid://blbqgbekad6w6" path="res://Imported assets/Cemetery/Plants/BushBerry.png" id="20_pr7ok"]
 [ext_resource type="Texture2D" uid="uid://y4rk7bm1187x" path="res://Imported assets/Cemetery/Structures/Church1.png" id="22_ekuf7"]
+[ext_resource type="PackedScene" uid="uid://cvn3ard6xkk6v" path="res://MyStuff/Player/player.tscn" id="23_3jiva"]
 
 [node name="Basic Level" type="Node2D"]
 
@@ -483,3 +484,6 @@ texture = ExtResource("20_mhpk1")
 position = Vector2(96, 185)
 texture = ExtResource("22_ekuf7")
 metadata/_edit_lock_ = true
+
+[node name="Player" parent="." instance=ExtResource("23_3jiva")]
+position = Vector2(225, 194)
