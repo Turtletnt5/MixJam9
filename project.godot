@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Monster Bowling"
+run/main_scene="res://MyStuff/Menus/Start/start_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 

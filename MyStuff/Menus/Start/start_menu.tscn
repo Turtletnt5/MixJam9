@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://c58engn3lu7cq"]
+
+[ext_resource type="Script" path="res://MyStuff/Menus/Start/start_menu.gd" id="1_7gpjf"]
+[ext_resource type="PackedScene" uid="uid://b8m4wgx4jqmxt" path="res://MyStuff/Menus/background.tscn" id="2_aoxvs"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7gpjf")
+
+[node name="Basic Level" parent="." instance=ExtResource("2_aoxvs")]
+metadata/_edit_lock_ = true
+
+[node name="Classic" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 2.0
+offset_right = 572.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 100
+text = "Classic mode"
+
+[node name="Infinite" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 26.0
+offset_right = 593.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 100
+text = "Infinite mode"
+
+[node name="Quit" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = 50.0
+offset_right = 186.0
+offset_bottom = 195.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 100
+text = "Quit"
+
+[connection signal="pressed" from="Classic" to="." method="_on_classic_pressed"]
+[connection signal="pressed" from="Infinite" to="." method="_on_infinite_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,806 @@
+[gd_scene load_steps=32 format=3 uid="uid://dgqurvpqwdugy"]
+
+[ext_resource type="Texture2D" uid="uid://c4vqoqyuy3yeg" path="res://Imported assets/Cemetery/Grass/GrassAlt1.png" id="1_8pvsr"]
+[ext_resource type="Texture2D" uid="uid://kyc7p8te6or0" path="res://Imported assets/Cemetery/Grass/GrassPlant1.png" id="2_a0c2y"]
+[ext_resource type="Texture2D" uid="uid://dfif6wqxphpk2" path="res://Imported assets/Cemetery/Grass/GrassRockTile1.png" id="3_rkslg"]
+[ext_resource type="Texture2D" uid="uid://b0ql0fmme0oup" path="res://Imported assets/Cemetery/Grass/GrassRockPlantTile2.png" id="4_ukog3"]
+[ext_resource type="Texture2D" uid="uid://dp0nmptg6y4wc" path="res://Imported assets/Cemetery/Grass/GrassPlant2.png" id="5_xetas"]
+[ext_resource type="Texture2D" uid="uid://dxklt4eh5reay" path="res://Imported assets/Cemetery/Grass/GrassRockPlantTile1.png" id="6_q8rm1"]
+[ext_resource type="Texture2D" uid="uid://ycdmdel1wrqd" path="res://Imported assets/Cemetery/Grass/GrassAlt3.png" id="7_g1dby"]
+[ext_resource type="Texture2D" uid="uid://oy2vxprtqakh" path="res://Imported assets/Cemetery/Grass/EmptyGrassTile.png" id="8_agjem"]
+[ext_resource type="Texture2D" uid="uid://p2vec8uv0vtv" path="res://Imported assets/Cemetery/Grass/GrassRockTile2.png" id="9_vmlyk"]
+[ext_resource type="Texture2D" uid="uid://bycgddagllkyc" path="res://Imported assets/Cemetery/Grass/GrassAlt2.png" id="10_dwvt6"]
+[ext_resource type="Texture2D" uid="uid://m5bpypanwe6r" path="res://Imported assets/Cemetery/Grass/GrassAlt4.png" id="11_2h0ds"]
+[ext_resource type="Texture2D" uid="uid://buhqt7xrjn3nn" path="res://Imported assets/Cemetery/Path/PathEndLeft.png" id="12_fh26s"]
+[ext_resource type="Texture2D" uid="uid://c1ll8k0vwtjn8" path="res://Imported assets/Cemetery/Path/PathEndRight.png" id="13_pqhcd"]
+[ext_resource type="Texture2D" uid="uid://djrf37hxchn1e" path="res://Imported assets/Cemetery/Path/PathStraightSideways.png" id="14_brgnj"]
+[ext_resource type="Texture2D" uid="uid://cxe178s1f4rhm" path="res://Imported assets/Cemetery/Path/PathT1.png" id="15_nnjy0"]
+[ext_resource type="Texture2D" uid="uid://on1xihwufnxj" path="res://Imported assets/Cemetery/Path/pathStriaghtUp.png" id="16_k7j6j"]
+[ext_resource type="Texture2D" uid="uid://bp4lcd53y1f55" path="res://Imported assets/Cemetery/Structures/GateOpen.png" id="17_j63by"]
+[ext_resource type="Texture2D" uid="uid://crklhbo8jogkl" path="res://Imported assets/Cemetery/Structures/FencePartRight.png" id="18_vthjq"]
+[ext_resource type="Texture2D" uid="uid://biv61m575f2du" path="res://Imported assets/Cemetery/Structures/FenceBottomRight.png" id="18_vwxm1"]
+[ext_resource type="Texture2D" uid="uid://lntrk5vsxju8" path="res://Imported assets/Cemetery/Structures/FencePartLeft.png" id="19_8lfdq"]
+[ext_resource type="Texture2D" uid="uid://x3m87m2goyki" path="res://Imported assets/Cemetery/Structures/FenceBottomLeft.png" id="19_i78s1"]
+[ext_resource type="Texture2D" uid="uid://bomualrnfvij4" path="res://Imported assets/Cemetery/Structures/FenceTopLeft.png" id="20_e1pqr"]
+[ext_resource type="Texture2D" uid="uid://c4ptwve1ogb4a" path="res://Imported assets/Cemetery/Structures/FenceMid.png" id="21_cgyq3"]
+[ext_resource type="Texture2D" uid="uid://rjgmx1ng4jme" path="res://Imported assets/Cemetery/Structures/FenceTopRight.png" id="21_ty87n"]
+[ext_resource type="Texture2D" uid="uid://dp4k0osnv1eil" path="res://Imported assets/Cemetery/Structures/FenceMidSide.png" id="24_mqixl"]
+[ext_resource type="Script" path="res://MyStuff/Classic mode/DestroyBall.gd" id="26_6hmx4"]
+[ext_resource type="Texture2D" uid="uid://5cjkiewbby0e" path="res://Imported assets/Cemetery/Detailing/Grave1.png" id="26_guh47"]
+[ext_resource type="Texture2D" uid="uid://cv0e3x72khoto" path="res://Imported assets/Cemetery/Detailing/Grave2.png" id="27_0rd6k"]
+[ext_resource type="Texture2D" uid="uid://b5elhqrcpyiy3" path="res://Imported assets/Cemetery/Detailing/Grave3.png" id="28_psh0r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8nr8"]
+size = Vector2(97, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljaj7"]
+size = Vector2(14, 196)
+
+[node name="PlayArea" type="Node2D"]
+
+[node name="Lanes" type="Node2D" parent="."]
+
+[node name="GrassAlt1" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 40)
+texture = ExtResource("1_8pvsr")
+
+[node name="GrassPlant1" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 40)
+texture = ExtResource("2_a0c2y")
+
+[node name="GrassRockTile1" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 88)
+texture = ExtResource("3_rkslg")
+
+[node name="GrassRockPlantTile2" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 40)
+texture = ExtResource("4_ukog3")
+
+[node name="GrassPlant2" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 40)
+texture = ExtResource("5_xetas")
+
+[node name="GrassPlant3" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 56)
+texture = ExtResource("2_a0c2y")
+
+[node name="GrassRockPlantTile1" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 56)
+texture = ExtResource("6_q8rm1")
+
+[node name="GrassAlt3" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 40)
+texture = ExtResource("7_g1dby")
+
+[node name="GrassPlant4" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 24)
+texture = ExtResource("5_xetas")
+
+[node name="EmptyGrassTile14" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 72)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile16" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile19" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 152)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile20" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 168)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile21" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 72)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile22" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 88)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile23" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile24" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 120)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile26" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 152)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile27" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 168)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile28" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 72)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile29" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 88)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile30" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 72)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile31" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 56)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile32" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile34" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 136)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile35" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 152)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile36" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 168)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile37" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile39" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 136)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile41" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 168)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile2" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 24)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile3" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 88)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile4" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile5" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 120)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile7" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 152)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile8" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 168)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile9" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 56)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile10" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 56)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile11" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 24)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile12" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(72, 24)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile13" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 24)
+texture = ExtResource("8_agjem")
+
+[node name="GrassRockTile2" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 72)
+texture = ExtResource("9_vmlyk")
+
+[node name="GrassAlt2" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 88)
+texture = ExtResource("10_dwvt6")
+
+[node name="GrassPlant5" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 120)
+texture = ExtResource("2_a0c2y")
+
+[node name="GrassPlant6" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 120)
+texture = ExtResource("5_xetas")
+
+[node name="GrassPlant7" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 120)
+texture = ExtResource("5_xetas")
+
+[node name="GrassPlant8" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(24, 136)
+texture = ExtResource("2_a0c2y")
+
+[node name="GrassPlant9" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(40, 136)
+texture = ExtResource("5_xetas")
+
+[node name="GrassAlt4" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(88, 136)
+texture = ExtResource("1_8pvsr")
+
+[node name="GrassAlt5" type="Sprite2D" parent="Lanes"]
+texture_filter = 1
+position = Vector2(56, 152)
+texture = ExtResource("11_2h0ds")
+
+[node name="Enclosure" type="Node2D" parent="."]
+
+[node name="EmptyGrassTile" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile2" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(24, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile3" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(40, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile4" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(56, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile5" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(72, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile6" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile7" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(88, 8)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile8" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 24)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile9" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 56)
+texture = ExtResource("8_agjem")
+
+[node name="GrassPlant2" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 40)
+texture = ExtResource("5_xetas")
+
+[node name="EmptyGrassTile10" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 24)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile11" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 40)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile12" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 72)
+texture = ExtResource("8_agjem")
+
+[node name="GrassPlant3" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 56)
+texture = ExtResource("5_xetas")
+
+[node name="EmptyGrassTile13" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 88)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile14" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile15" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 120)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile16" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 152)
+texture = ExtResource("8_agjem")
+
+[node name="GrassPlant4" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 136)
+texture = ExtResource("5_xetas")
+
+[node name="EmptyGrassTile17" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 72)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile18" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 88)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile19" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 104)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile20" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 136)
+texture = ExtResource("8_agjem")
+
+[node name="GrassPlant5" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 120)
+texture = ExtResource("5_xetas")
+
+[node name="GrassPlant6" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 168)
+texture = ExtResource("5_xetas")
+
+[node name="EmptyGrassTile22" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 152)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile23" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 168)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile24" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 184)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile25" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 184)
+texture = ExtResource("8_agjem")
+
+[node name="GrassAlt1" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(8, 200)
+texture = ExtResource("1_8pvsr")
+
+[node name="GrassAlt4" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(88, 200)
+texture = ExtResource("11_2h0ds")
+
+[node name="EmptyGrassTile21" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(104, 200)
+texture = ExtResource("8_agjem")
+
+[node name="GrassRockPlantTile1" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(24, 200)
+texture = ExtResource("6_q8rm1")
+
+[node name="PathStriaghtUp" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(56, 200)
+texture = ExtResource("16_k7j6j")
+
+[node name="EmptyGrassTile26" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(40, 200)
+texture = ExtResource("8_agjem")
+
+[node name="EmptyGrassTile27" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(72, 200)
+texture = ExtResource("8_agjem")
+
+[node name="GateOpen" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(55, 195)
+texture = ExtResource("17_j63by")
+
+[node name="FenceMid2" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(24, 201)
+texture = ExtResource("21_cgyq3")
+
+[node name="FencePartRight" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(32, 200)
+texture = ExtResource("18_vthjq")
+
+[node name="FenceMid" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(80, 194)
+texture = ExtResource("21_cgyq3")
+centered = false
+
+[node name="FencePartLeft" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(72, 192)
+texture = ExtResource("19_8lfdq")
+centered = false
+
+[node name="FenceBottomRight" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(94, 191)
+texture = ExtResource("18_vwxm1")
+centered = false
+
+[node name="FenceBottomLeft" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(2, 192)
+texture = ExtResource("19_i78s1")
+centered = false
+
+[node name="FenceMidSide" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 174)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide2" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 158)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide3" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 142)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide4" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 126)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide5" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 110)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide6" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 94)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide7" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 78)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide8" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 62)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide9" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 46)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide10" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 30)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide11" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(3, 14)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide12" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 174)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide13" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 158)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide14" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 142)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide15" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 126)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide16" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 110)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide17" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 94)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide18" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 78)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide19" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 62)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide20" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 46)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceTopLeft" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(2, 0)
+texture = ExtResource("20_e1pqr")
+centered = false
+
+[node name="FenceTopRight" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(96, 0)
+texture = ExtResource("21_ty87n")
+centered = false
+
+[node name="FenceMid3" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(25, 9)
+texture = ExtResource("21_cgyq3")
+
+[node name="FenceMidSide21" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 30)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMidSide22" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(102, 14)
+texture = ExtResource("24_mqixl")
+centered = false
+
+[node name="FenceMid4" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(41, 9)
+texture = ExtResource("21_cgyq3")
+
+[node name="FenceMid5" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(57, 9)
+texture = ExtResource("21_cgyq3")
+
+[node name="FenceMid6" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(73, 9)
+texture = ExtResource("21_cgyq3")
+
+[node name="FenceMid7" type="Sprite2D" parent="Enclosure"]
+texture_filter = 1
+position = Vector2(88, 9)
+texture = ExtResource("21_cgyq3")
+
+[node name="PlayerPath" type="Node2D" parent="."]
+
+[node name="PathEndLeft" type="Sprite2D" parent="PlayerPath"]
+texture_filter = 1
+position = Vector2(24, 184)
+texture = ExtResource("12_fh26s")
+
+[node name="PathEndRight" type="Sprite2D" parent="PlayerPath"]
+texture_filter = 1
+position = Vector2(88, 184)
+texture = ExtResource("13_pqhcd")
+
+[node name="PathStraightSideways" type="Sprite2D" parent="PlayerPath"]
+texture_filter = 1
+position = Vector2(40, 184)
+texture = ExtResource("14_brgnj")
+
+[node name="PathStraightSideways2" type="Sprite2D" parent="PlayerPath"]
+texture_filter = 1
+position = Vector2(72, 184)
+texture = ExtResource("14_brgnj")
+
+[node name="PathT1" type="Sprite2D" parent="PlayerPath"]
+texture_filter = 1
+position = Vector2(56, 184)
+texture = ExtResource("15_nnjy0")
+
+[node name="Coliders" type="Node2D" parent="."]
+
+[node name="Bottom" type="StaticBody2D" parent="Coliders"]
+script = ExtResource("26_6hmx4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Bottom"]
+position = Vector2(57, 192)
+shape = SubResource("RectangleShape2D_c8nr8")
+
+[node name="Left" type="StaticBody2D" parent="Coliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Left"]
+position = Vector2(7, 96)
+shape = SubResource("RectangleShape2D_ljaj7")
+
+[node name="right" type="StaticBody2D" parent="Coliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/right"]
+position = Vector2(106, 96)
+shape = SubResource("RectangleShape2D_ljaj7")
+
+[node name="Top" type="StaticBody2D" parent="Coliders"]
+script = ExtResource("26_6hmx4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Top"]
+position = Vector2(56, 11)
+shape = SubResource("RectangleShape2D_c8nr8")
+
+[node name="Grave1" type="Sprite2D" parent="."]
+position = Vector2(23, 29)
+texture = ExtResource("26_guh47")
+
+[node name="Grave2" type="Sprite2D" parent="."]
+position = Vector2(42, 38)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave3" type="Sprite2D" parent="."]
+position = Vector2(57, 21)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave4" type="Sprite2D" parent="."]
+position = Vector2(76, 24)
+texture = ExtResource("26_guh47")
+
+[node name="Grave5" type="Sprite2D" parent="."]
+position = Vector2(92, 23)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave6" type="Sprite2D" parent="."]
+position = Vector2(26, 49)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave7" type="Sprite2D" parent="."]
+position = Vector2(65, 47)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave8" type="Sprite2D" parent="."]
+position = Vector2(86, 51)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave9" type="Sprite2D" parent="."]
+position = Vector2(29, 87)
+texture = ExtResource("26_guh47")
+
+[node name="Grave10" type="Sprite2D" parent="."]
+position = Vector2(59, 79)
+texture = ExtResource("26_guh47")
+
+[node name="Grave11" type="Sprite2D" parent="."]
+position = Vector2(84, 98)
+texture = ExtResource("26_guh47")
+
+[node name="Grave12" type="Sprite2D" parent="."]
+position = Vector2(51, 98)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave13" type="Sprite2D" parent="."]
+position = Vector2(26, 113)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave14" type="Sprite2D" parent="."]
+position = Vector2(77, 119)
+texture = ExtResource("26_guh47")
+
+[node name="Grave15" type="Sprite2D" parent="."]
+position = Vector2(53, 119)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave16" type="Sprite2D" parent="."]
+position = Vector2(83, 74)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave17" type="Sprite2D" parent="."]
+position = Vector2(86, 128)
+texture = ExtResource("28_psh0r")
+
+[node name="Spawners" type="Node2D" parent="."]

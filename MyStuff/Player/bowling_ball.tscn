@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://baga4j25j4l2w"]
+
+[ext_resource type="Texture2D" uid="uid://biofkneoebson" path="res://Imported assets/Sport-Balls-Asset-Pack-Pixel-Art/64x64/bowling.png" id="1_f42df"]
+[ext_resource type="Script" path="res://MyStuff/Player/bowling_ball.gd" id="1_uwqgq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bgid7"]
+radius = 4.0
+
+[node name="Bowling_ball" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_uwqgq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bgid7")
+
+[node name="Bowling" type="Sprite2D" parent="."]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_f42df")

@@ -1,6 +1,3 @@
-Monster Creatures Fantasy
-By LuizMelo
-https://luizmelo.itch.io/monsters-creatures-fantasy
 
 Tilesets_Cemetery
 By Dreamir
@@ -9,3 +6,7 @@ https://dreamir.itch.io/tilesets-cemetery
 small 8-direction characters
 By AxulArt
 https://axulart.itch.io/small-8-direction-characters
+
+Sports balls pixel-art pack
+By BeeMaxStudio
+https://beemaxstudio.itch.io/sport-balls-pixel-pack
