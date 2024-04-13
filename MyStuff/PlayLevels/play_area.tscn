@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dgqurvpqwdugy"]
+[gd_scene load_steps=31 format=3 uid="uid://dgqurvpqwdugy"]
 
 [ext_resource type="Texture2D" uid="uid://c4vqoqyuy3yeg" path="res://Imported assets/Cemetery/Grass/GrassAlt1.png" id="1_8pvsr"]
 [ext_resource type="Texture2D" uid="uid://kyc7p8te6or0" path="res://Imported assets/Cemetery/Grass/GrassPlant1.png" id="2_a0c2y"]
@@ -25,6 +25,15 @@
 [ext_resource type="Texture2D" uid="uid://c4ptwve1ogb4a" path="res://Imported assets/Cemetery/Structures/FenceMid.png" id="21_cgyq3"]
 [ext_resource type="Texture2D" uid="uid://rjgmx1ng4jme" path="res://Imported assets/Cemetery/Structures/FenceTopRight.png" id="21_ty87n"]
 [ext_resource type="Texture2D" uid="uid://dp4k0osnv1eil" path="res://Imported assets/Cemetery/Structures/FenceMidSide.png" id="24_mqixl"]
+[ext_resource type="Texture2D" uid="uid://5cjkiewbby0e" path="res://Imported assets/Cemetery/Detailing/Grave1.png" id="26_guh47"]
+[ext_resource type="Texture2D" uid="uid://cv0e3x72khoto" path="res://Imported assets/Cemetery/Detailing/Grave2.png" id="27_0rd6k"]
+[ext_resource type="Texture2D" uid="uid://b5elhqrcpyiy3" path="res://Imported assets/Cemetery/Detailing/Grave3.png" id="28_psh0r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8nr8"]
+size = Vector2(97, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljaj7"]
+size = Vector2(14, 196)
 
 [node name="PlayArea" type="Node2D"]
 
@@ -696,3 +705,97 @@ texture = ExtResource("14_brgnj")
 texture_filter = 1
 position = Vector2(56, 184)
 texture = ExtResource("15_nnjy0")
+
+[node name="Coliders" type="Node2D" parent="."]
+
+[node name="Bottom" type="StaticBody2D" parent="Coliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Bottom"]
+position = Vector2(56.5, 192)
+shape = SubResource("RectangleShape2D_c8nr8")
+
+[node name="Left" type="StaticBody2D" parent="Coliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Left"]
+position = Vector2(7, 96)
+shape = SubResource("RectangleShape2D_ljaj7")
+
+[node name="right" type="StaticBody2D" parent="Coliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/right"]
+position = Vector2(106, 96)
+shape = SubResource("RectangleShape2D_ljaj7")
+
+[node name="Top" type="StaticBody2D" parent="Coliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Top"]
+position = Vector2(56, 11)
+shape = SubResource("RectangleShape2D_c8nr8")
+
+[node name="Grave1" type="Sprite2D" parent="."]
+position = Vector2(23, 29)
+texture = ExtResource("26_guh47")
+
+[node name="Grave2" type="Sprite2D" parent="."]
+position = Vector2(42, 38)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave3" type="Sprite2D" parent="."]
+position = Vector2(57, 21)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave4" type="Sprite2D" parent="."]
+position = Vector2(76, 24)
+texture = ExtResource("26_guh47")
+
+[node name="Grave5" type="Sprite2D" parent="."]
+position = Vector2(92, 23)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave6" type="Sprite2D" parent="."]
+position = Vector2(26, 49)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave7" type="Sprite2D" parent="."]
+position = Vector2(65, 47)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave8" type="Sprite2D" parent="."]
+position = Vector2(86, 51)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave9" type="Sprite2D" parent="."]
+position = Vector2(29, 87)
+texture = ExtResource("26_guh47")
+
+[node name="Grave10" type="Sprite2D" parent="."]
+position = Vector2(59, 79)
+texture = ExtResource("26_guh47")
+
+[node name="Grave11" type="Sprite2D" parent="."]
+position = Vector2(84, 98)
+texture = ExtResource("26_guh47")
+
+[node name="Grave12" type="Sprite2D" parent="."]
+position = Vector2(51, 98)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave13" type="Sprite2D" parent="."]
+position = Vector2(26, 113)
+texture = ExtResource("28_psh0r")
+
+[node name="Grave14" type="Sprite2D" parent="."]
+position = Vector2(77, 119)
+texture = ExtResource("26_guh47")
+
+[node name="Grave15" type="Sprite2D" parent="."]
+position = Vector2(53, 119)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave16" type="Sprite2D" parent="."]
+position = Vector2(83, 74)
+texture = ExtResource("27_0rd6k")
+
+[node name="Grave17" type="Sprite2D" parent="."]
+position = Vector2(86, 128)
+texture = ExtResource("28_psh0r")

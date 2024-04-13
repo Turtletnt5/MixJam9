@@ -118,178 +118,218 @@ metadata/_edit_lock_ = true
 texture_filter = 1
 position = Vector2(225, 232)
 texture = ExtResource("4_jrf2h")
+metadata/_edit_lock_ = true
 
 [node name="PathT2" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(225, 248)
 texture = ExtResource("5_dor5k")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(209, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways2" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(193, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways3" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(177, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways4" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(161, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways5" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(145, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways6" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(129, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathT3" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(113, 248)
 texture = ExtResource("5_dor5k")
+metadata/_edit_lock_ = true
 
 [node name="PathStriaghtUp2" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(113, 232)
 texture = ExtResource("4_jrf2h")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways7" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(97, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways8" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(81, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways9" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(65, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways10" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(49, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways11" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(33, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways12" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(17, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways13" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(1, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="Light3" type="Sprite2D" parent="Decor"]
 position = Vector2(22, 222)
 texture = ExtResource("16_7c6ke")
+metadata/_edit_lock_ = true
 
 [node name="Light1" type="Sprite2D" parent="Decor"]
 position = Vector2(286, 222)
 texture = ExtResource("17_dxve5")
+metadata/_edit_lock_ = true
 
 [node name="Light2" type="Sprite2D" parent="Decor"]
 position = Vector2(152, 223)
 texture = ExtResource("16_7c6ke")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways14" type="Sprite2D" parent="Decor"]
 position = Vector2(241, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways15" type="Sprite2D" parent="Decor"]
 position = Vector2(257, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways16" type="Sprite2D" parent="Decor"]
 position = Vector2(273, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways17" type="Sprite2D" parent="Decor"]
 position = Vector2(289, 248)
 texture = ExtResource("6_uawn8")
+metadata/_edit_lock_ = true
 
 [node name="PathEndRight" type="Sprite2D" parent="Decor"]
 position = Vector2(305, 248)
 texture = ExtResource("18_5qljh")
+metadata/_edit_lock_ = true
 
 [node name="Bush" type="Sprite2D" parent="Decor"]
 position = Vector2(20, 196)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="Bush2" type="Sprite2D" parent="Decor"]
 position = Vector2(44, 198)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry" type="Sprite2D" parent="Decor"]
 position = Vector2(19, 174)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="Bush3" type="Sprite2D" parent="Decor"]
 position = Vector2(45, 175)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry2" type="Sprite2D" parent="Decor"]
 position = Vector2(19, 157)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry3" type="Sprite2D" parent="Decor"]
 position = Vector2(44, 157)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="Bush4" type="Sprite2D" parent="Decor"]
 position = Vector2(20, 138)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="Bush5" type="Sprite2D" parent="Decor"]
 position = Vector2(46, 137)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry4" type="Sprite2D" parent="Decor"]
 position = Vector2(69, 197)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry5" type="Sprite2D" parent="Decor"]
 position = Vector2(68, 175)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry6" type="Sprite2D" parent="Decor"]
 position = Vector2(20, 117)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="BushBerry7" type="Sprite2D" parent="Decor"]
 position = Vector2(65, 135)
 texture = ExtResource("20_pr7ok")
+metadata/_edit_lock_ = true
 
 [node name="Bush6" type="Sprite2D" parent="Decor"]
 position = Vector2(68, 157)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="Bush7" type="Sprite2D" parent="Decor"]
 position = Vector2(45, 115)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="Bush8" type="Sprite2D" parent="Decor"]
 position = Vector2(68, 116)
 texture = ExtResource("19_s4c6k")
+metadata/_edit_lock_ = true
 
 [node name="Forest" type="Node2D" parent="."]
 metadata/_edit_lock_ = true
