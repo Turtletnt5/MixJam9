@@ -34,7 +34,7 @@
 size = Vector2(97, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ljaj7"]
-size = Vector2(14, 196)
+size = Vector2(5, 196)
 
 [node name="PlayArea" type="Node2D"]
 
@@ -719,13 +719,13 @@ shape = SubResource("RectangleShape2D_c8nr8")
 [node name="Left" type="StaticBody2D" parent="Coliders"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/Left"]
-position = Vector2(7, 96)
+position = Vector2(5.5, 96)
 shape = SubResource("RectangleShape2D_ljaj7")
 
 [node name="right" type="StaticBody2D" parent="Coliders"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Coliders/right"]
-position = Vector2(106, 96)
+position = Vector2(109, 96)
 shape = SubResource("RectangleShape2D_ljaj7")
 
 [node name="Top" type="StaticBody2D" parent="Coliders"]
