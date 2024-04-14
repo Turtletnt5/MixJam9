@@ -7,6 +7,7 @@ const accel = 5
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var LivesLabel = $Label
+@onready var walkingSound = $Walking
 
 signal deathsignal()
 
@@ -35,7 +36,8 @@ func _physics_process(delta):
 			else:
 				velocity.x += accel
 		
-	
+	if velocity.y > 0 && !walkingSound.playing:
+		walkingSound.play()
 	
 	var collision = move_and_collide(velocity * delta)
 	if collision:

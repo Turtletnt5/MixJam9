@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxuocn4p7d7el"
+path="res://.godot/imported/420252__redroxpeterpepper__step-skeleton.mp3-055666abf364533c0a01e7d3e6d9e838.mp3str"
+
+[deps]
+
+source_file="res://Imported assets/Sound Effect/420252__redroxpeterpepper__step-skeleton.mp3"
+dest_files=["res://.godot/imported/420252__redroxpeterpepper__step-skeleton.mp3-055666abf364533c0a01e7d3e6d9e838.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
