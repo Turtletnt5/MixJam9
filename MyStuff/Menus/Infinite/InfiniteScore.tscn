@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bygj3eof7cy31"]
+[gd_scene load_steps=4 format=3 uid="uid://bygj3eof7cy31"]
 
 [ext_resource type="Script" path="res://MyStuff/Menus/Infinite/InfiniteScore.gd" id="1_qs0um"]
 [ext_resource type="PackedScene" uid="uid://b8m4wgx4jqmxt" path="res://MyStuff/Menus/background.tscn" id="2_wx2ug"]
+[ext_resource type="AudioStream" uid="uid://c3l8dl47r13p8" path="res://Imported assets/Sound Effect/game-bonus-144751.mp3" id="3_wvr4m"]
 
 [node name="infinite score" type="Control"]
 layout_mode = 3
@@ -67,6 +68,9 @@ grow_vertical = 2
 text = "You Survived
 0 Waves"
 horizontal_alignment = 1
+
+[node name="WinSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_wvr4m")
 
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

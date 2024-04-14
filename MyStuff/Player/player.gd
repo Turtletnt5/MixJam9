@@ -6,6 +6,7 @@ const coolDownTime : float = 2.5
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var AttackCoolDown = $AttackCoolDown
+@onready var Walking = $Walking
 
 var AttackReady : bool = true
 
@@ -36,8 +37,12 @@ func _physics_process(_delta):
 	else:
 		if direction > 0:
 			animated_sprite.play("MoveRight")
+			if !Walking.playing:
+				Walking.play()
 		else:
 			animated_sprite.play("MoveLeft")
+			if !Walking.playing:
+				Walking.play()
 		
 	
 	move_and_slide()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgokyo1rxkn6"]
+[gd_scene load_steps=4 format=3 uid="uid://bgokyo1rxkn6"]
 
 [ext_resource type="Script" path="res://MyStuff/Menus/Basic/BasicWin.gd" id="1_00lar"]
 [ext_resource type="PackedScene" uid="uid://b8m4wgx4jqmxt" path="res://MyStuff/Menus/background.tscn" id="2_qxgr3"]
+[ext_resource type="AudioStream" uid="uid://c3l8dl47r13p8" path="res://Imported assets/Sound Effect/game-bonus-144751.mp3" id="3_mlr0p"]
 
 [node name="basicWin" type="Control"]
 layout_mode = 3
@@ -65,6 +66,9 @@ offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Victory"
+
+[node name="WinSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_mlr0p")
 
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
