@@ -29,4 +29,5 @@ func MisstionFailed():
 		get_tree().change_scene_to_file("res://MyStuff/Menus/Basic/BasicLose.tscn")
 		
 	else:
+		get_tree().call_group("Skeletons", "suicide")
 		get_tree().change_scene_to_file("res://MyStuff/Menus/Infinite/InfiniteScore.tscn")

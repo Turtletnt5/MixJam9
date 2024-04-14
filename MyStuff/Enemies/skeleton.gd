@@ -15,7 +15,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	LivesLabel.text = str(lives)
-	
+	add_to_group("Skeletons")
 	
 
 func _physics_process(delta):
@@ -66,4 +66,5 @@ func start(_position):
 func setLife(_life):
 	lives = _life
 
-
+func suicide():
+	queue_free()

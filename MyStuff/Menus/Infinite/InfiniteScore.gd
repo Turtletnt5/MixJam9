@@ -13,8 +13,11 @@ func _process(_delta):
 
 
 func _on_restart_pressed():
+	InfiniteGlobals.waveCount = 0
 	get_tree().change_scene_to_file("res://MyStuff/Infinite mode/Infinite_level.tscn")
+	
 
 
 func _on_menu_pressed():
+	InfiniteGlobals.waveCount = 0
 	get_tree().change_scene_to_file("res://MyStuff/Menus/Start/start_menu.tscn")
