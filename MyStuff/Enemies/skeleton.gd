@@ -49,6 +49,8 @@ func _physics_process(delta):
 
 func Hit(normal):
 	
+	$HitSound.play()
+	
 	velocity = velocity.bounce(-normal)
 	velocity.y *= 2
 	velocity.x *= 10
@@ -57,6 +59,7 @@ func Hit(normal):
 	LivesLabel.text = str(lives)
 	
 	if lives <= 0:
+		
 		get_tree().call_group("victory", "killedEnemy")
 		queue_free()
 

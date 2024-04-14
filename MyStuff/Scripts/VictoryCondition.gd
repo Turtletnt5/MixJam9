@@ -10,6 +10,7 @@ signal WaveKilled()
 
 func killedEnemy():
 	KillCount += 1
+	$HitSound.play()
 	
 	if KillCount >= killsNeeded:
 		

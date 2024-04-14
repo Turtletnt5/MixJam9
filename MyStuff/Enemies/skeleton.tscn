@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://6iy65km6gnoo"]
+[gd_scene load_steps=5 format=3 uid="uid://6iy65km6gnoo"]
 
 [ext_resource type="Script" path="res://MyStuff/Enemies/skeleton.gd" id="1_nfoh6"]
 [ext_resource type="SpriteFrames" uid="uid://crhce2tm8g0x6" path="res://MyStuff/Enemies/Skeleton.tres" id="1_pn3rt"]
+[ext_resource type="AudioStream" uid="uid://daytpm5lcv02l" path="res://Imported assets/Sound Effect/641236__captainyulef__bones.wav" id="3_frci4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v4l5u"]
 radius = 7.0
@@ -30,3 +31,6 @@ offset_bottom = 3.0
 scale = Vector2(0.5, 0.5)
 text = "Lives"
 horizontal_alignment = 1
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_frci4")

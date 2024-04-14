@@ -1,6 +1,7 @@
-[gd_scene load_steps=27 format=3 uid="uid://drcd3y1mhd4tt"]
+[gd_scene load_steps=28 format=3 uid="uid://drcd3y1mhd4tt"]
 
 [ext_resource type="Texture2D" uid="uid://oy2vxprtqakh" path="res://Imported assets/Cemetery/Grass/EmptyGrassTile.png" id="1_curxk"]
+[ext_resource type="AudioStream" uid="uid://daytpm5lcv02l" path="res://Imported assets/Sound Effect/641236__captainyulef__bones.wav" id="2_7eecs"]
 [ext_resource type="Texture2D" uid="uid://ycdmdel1wrqd" path="res://Imported assets/Cemetery/Grass/GrassAlt3.png" id="2_w5axy"]
 [ext_resource type="Texture2D" uid="uid://c4vqoqyuy3yeg" path="res://Imported assets/Cemetery/Grass/GrassAlt1.png" id="3_epi4s"]
 [ext_resource type="Texture2D" uid="uid://m5bpypanwe6r" path="res://Imported assets/Cemetery/Grass/GrassAlt4.png" id="4_8ynq5"]
@@ -32,6 +33,9 @@
 [node name="VictoryCondition" type="Node" parent="." groups=["victory"]]
 script = ExtResource("25_7scx4")
 infiniteMode = true
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="VictoryCondition"]
+stream = ExtResource("2_7eecs")
 
 [node name="BackgroundGrass" type="Sprite2D" parent="."]
 z_index = -1

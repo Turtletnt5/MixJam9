@@ -13,6 +13,9 @@ func _physics_process(delta):
 	if collision:
 		velocity = velocity.bounce(collision.get_normal())
 		
+		
+		$BouceSound.play()
+		
 		#velocity.y -= speed
 		#if velocity.y > speed:
 			#velocity.y = speed

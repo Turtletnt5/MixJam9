@@ -22,4 +22,7 @@ position = Vector2(0, -15)
 
 [node name="AttackCoolDown" type="Timer" parent="."]
 
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+current = true
+
 [connection signal="timeout" from="AttackCoolDown" to="." method="AttackOffCoolDown"]
