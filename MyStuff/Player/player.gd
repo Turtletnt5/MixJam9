@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
-const speed : float = 25
+const speed : float = 30
 const gravity : float = 20
 const coolDownTime : float = 2.5
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var AttackCoolDown = $AttackCoolDown
 @onready var Walking = $Walking
+@onready var throw = $Throw
 
 var AttackReady : bool = true
 
@@ -25,6 +26,7 @@ func _input(_event):
 	
 	if Input.is_action_just_pressed("Attack"):
 		Attack()
+		
 
 func _physics_process(_delta):
 	
@@ -49,6 +51,7 @@ func _physics_process(_delta):
 
 func Attack():
 	if AttackReady:
+		throw.play()
 		var b = bowlingBall.instantiate()
 		b.start($BallSpawn.global_position, 0)
 		get_tree().root.add_child(b)

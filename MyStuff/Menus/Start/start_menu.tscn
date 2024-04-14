@@ -69,22 +69,41 @@ scale = Vector2(0.15, 0.15)
 theme_override_font_sizes/font_size = 100
 text = "Quit"
 
-[node name="Label" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -99.0
-offset_top = -47.0
-offset_right = 1531.0
-offset_bottom = 226.0
+offset_left = -98.0
+offset_top = -55.0
+offset_right = 1532.0
+offset_bottom = 218.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.1, 0.1)
 theme_override_font_sizes/font_size = 200
 text = "Monster Bowling"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.0
+offset_top = -24.0
+offset_right = 1533.0
+offset_bottom = 249.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+theme_override_font_sizes/font_size = 100
+text = "By Turtletnt5"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Classic" to="." method="_on_classic_pressed"]
 [connection signal="pressed" from="Infinite" to="." method="_on_infinite_pressed"]
