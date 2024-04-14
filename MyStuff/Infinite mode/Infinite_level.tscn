@@ -1,526 +1,531 @@
-[gd_scene load_steps=26 format=3 uid="uid://b6xqmxhcjp5su"]
+[gd_scene load_steps=27 format=3 uid="uid://drcd3y1mhd4tt"]
 
-[ext_resource type="Texture2D" uid="uid://oy2vxprtqakh" path="res://Imported assets/Cemetery/Grass/EmptyGrassTile.png" id="1_xqw0f"]
-[ext_resource type="PackedScene" uid="uid://dgqurvpqwdugy" path="res://MyStuff/assets/play_area.tscn" id="2_c3pih"]
-[ext_resource type="Texture2D" uid="uid://ycdmdel1wrqd" path="res://Imported assets/Cemetery/Grass/GrassAlt3.png" id="2_pt48j"]
-[ext_resource type="Texture2D" uid="uid://c4vqoqyuy3yeg" path="res://Imported assets/Cemetery/Grass/GrassAlt1.png" id="3_lpbq6"]
-[ext_resource type="Texture2D" uid="uid://on1xihwufnxj" path="res://Imported assets/Cemetery/Path/pathStriaghtUp.png" id="4_jrf2h"]
-[ext_resource type="Texture2D" uid="uid://m5bpypanwe6r" path="res://Imported assets/Cemetery/Grass/GrassAlt4.png" id="4_mjh0c"]
-[ext_resource type="Texture2D" uid="uid://nex07rkdmsng" path="res://Imported assets/Cemetery/Path/PathT2.png" id="5_dor5k"]
-[ext_resource type="Texture2D" uid="uid://kyc7p8te6or0" path="res://Imported assets/Cemetery/Grass/GrassPlant1.png" id="5_ptwdc"]
-[ext_resource type="Texture2D" uid="uid://dxklt4eh5reay" path="res://Imported assets/Cemetery/Grass/GrassRockPlantTile1.png" id="6_c7tst"]
-[ext_resource type="Texture2D" uid="uid://djrf37hxchn1e" path="res://Imported assets/Cemetery/Path/PathStraightSideways.png" id="6_uawn8"]
-[ext_resource type="Texture2D" uid="uid://dfif6wqxphpk2" path="res://Imported assets/Cemetery/Grass/GrassRockTile1.png" id="7_xv62f"]
-[ext_resource type="Texture2D" uid="uid://p2vec8uv0vtv" path="res://Imported assets/Cemetery/Grass/GrassRockTile2.png" id="8_crmyo"]
-[ext_resource type="Texture2D" uid="uid://bycgddagllkyc" path="res://Imported assets/Cemetery/Grass/GrassAlt2.png" id="9_agyld"]
-[ext_resource type="Texture2D" uid="uid://dp0nmptg6y4wc" path="res://Imported assets/Cemetery/Grass/GrassPlant2.png" id="10_6hjie"]
-[ext_resource type="Texture2D" uid="uid://vnkc5kekur8w" path="res://Imported assets/Cemetery/Detailing/Light2.png" id="16_7c6ke"]
-[ext_resource type="Texture2D" uid="uid://bw43gnv7j20nx" path="res://Imported assets/Cemetery/Detailing/Light1.png" id="17_dxve5"]
-[ext_resource type="Texture2D" uid="uid://c1ll8k0vwtjn8" path="res://Imported assets/Cemetery/Path/PathEndRight.png" id="18_5qljh"]
-[ext_resource type="Texture2D" uid="uid://cddr2liff81ac" path="res://Imported assets/Cemetery/Plants/Tree1.png" id="19_ndmfo"]
-[ext_resource type="Texture2D" uid="uid://dx34ymfiafics" path="res://Imported assets/Cemetery/Plants/Bush.png" id="19_s4c6k"]
-[ext_resource type="Texture2D" uid="uid://ck4mxc573xb85" path="res://Imported assets/Cemetery/Plants/Tree2.png" id="20_mhpk1"]
-[ext_resource type="Texture2D" uid="uid://blbqgbekad6w6" path="res://Imported assets/Cemetery/Plants/BushBerry.png" id="20_pr7ok"]
-[ext_resource type="Texture2D" uid="uid://y4rk7bm1187x" path="res://Imported assets/Cemetery/Structures/Church1.png" id="22_ekuf7"]
-[ext_resource type="PackedScene" uid="uid://cvn3ard6xkk6v" path="res://MyStuff/Player/player.tscn" id="23_3jiva"]
-[ext_resource type="PackedScene" uid="uid://6iy65km6gnoo" path="res://MyStuff/Enemies/skeleton.tscn" id="24_k3g4n"]
-[ext_resource type="Script" path="res://MyStuff/Scripts/VictoryCondition.gd" id="25_4jhqg"]
+[ext_resource type="Texture2D" uid="uid://oy2vxprtqakh" path="res://Imported assets/Cemetery/Grass/EmptyGrassTile.png" id="1_curxk"]
+[ext_resource type="Texture2D" uid="uid://ycdmdel1wrqd" path="res://Imported assets/Cemetery/Grass/GrassAlt3.png" id="2_w5axy"]
+[ext_resource type="Texture2D" uid="uid://c4vqoqyuy3yeg" path="res://Imported assets/Cemetery/Grass/GrassAlt1.png" id="3_epi4s"]
+[ext_resource type="Texture2D" uid="uid://m5bpypanwe6r" path="res://Imported assets/Cemetery/Grass/GrassAlt4.png" id="4_8ynq5"]
+[ext_resource type="Texture2D" uid="uid://kyc7p8te6or0" path="res://Imported assets/Cemetery/Grass/GrassPlant1.png" id="5_hotbx"]
+[ext_resource type="Texture2D" uid="uid://dxklt4eh5reay" path="res://Imported assets/Cemetery/Grass/GrassRockPlantTile1.png" id="6_0reak"]
+[ext_resource type="Texture2D" uid="uid://dfif6wqxphpk2" path="res://Imported assets/Cemetery/Grass/GrassRockTile1.png" id="7_vy7tu"]
+[ext_resource type="Texture2D" uid="uid://p2vec8uv0vtv" path="res://Imported assets/Cemetery/Grass/GrassRockTile2.png" id="8_13sqv"]
+[ext_resource type="Texture2D" uid="uid://bycgddagllkyc" path="res://Imported assets/Cemetery/Grass/GrassAlt2.png" id="9_eey5r"]
+[ext_resource type="Texture2D" uid="uid://dp0nmptg6y4wc" path="res://Imported assets/Cemetery/Grass/GrassPlant2.png" id="10_pb3ft"]
+[ext_resource type="PackedScene" uid="uid://dgqurvpqwdugy" path="res://MyStuff/assets/play_area.tscn" id="11_sptuk"]
+[ext_resource type="Texture2D" uid="uid://on1xihwufnxj" path="res://Imported assets/Cemetery/Path/pathStriaghtUp.png" id="12_yx8dp"]
+[ext_resource type="Texture2D" uid="uid://nex07rkdmsng" path="res://Imported assets/Cemetery/Path/PathT2.png" id="13_iec0i"]
+[ext_resource type="Texture2D" uid="uid://djrf37hxchn1e" path="res://Imported assets/Cemetery/Path/PathStraightSideways.png" id="14_pgh0t"]
+[ext_resource type="Texture2D" uid="uid://vnkc5kekur8w" path="res://Imported assets/Cemetery/Detailing/Light2.png" id="15_1deoe"]
+[ext_resource type="Texture2D" uid="uid://bw43gnv7j20nx" path="res://Imported assets/Cemetery/Detailing/Light1.png" id="16_jchew"]
+[ext_resource type="Texture2D" uid="uid://c1ll8k0vwtjn8" path="res://Imported assets/Cemetery/Path/PathEndRight.png" id="17_ilqa1"]
+[ext_resource type="Texture2D" uid="uid://dx34ymfiafics" path="res://Imported assets/Cemetery/Plants/Bush.png" id="18_vp4l6"]
+[ext_resource type="Texture2D" uid="uid://blbqgbekad6w6" path="res://Imported assets/Cemetery/Plants/BushBerry.png" id="19_0o2m6"]
+[ext_resource type="Texture2D" uid="uid://cddr2liff81ac" path="res://Imported assets/Cemetery/Plants/Tree1.png" id="20_fogb3"]
+[ext_resource type="Texture2D" uid="uid://ck4mxc573xb85" path="res://Imported assets/Cemetery/Plants/Tree2.png" id="21_cwxrb"]
+[ext_resource type="Texture2D" uid="uid://y4rk7bm1187x" path="res://Imported assets/Cemetery/Structures/Church1.png" id="22_5ltk5"]
+[ext_resource type="PackedScene" uid="uid://cvn3ard6xkk6v" path="res://MyStuff/Player/player.tscn" id="23_q5ccu"]
+[ext_resource type="Script" path="res://MyStuff/Scripts/VictoryCondition.gd" id="25_7scx4"]
+[ext_resource type="PackedScene" uid="uid://cocauft8hud2f" path="res://MyStuff/Infinite mode/spawner.tscn" id="25_ctucq"]
+[ext_resource type="Script" path="res://MyStuff/Infinite mode/WaveController.gd" id="25_jkjld"]
 
 [node name="Basic Level" type="Node2D"]
 
 [node name="VictoryCondition" type="Node" parent="." groups=["victory"]]
-script = ExtResource("25_4jhqg")
+script = ExtResource("25_7scx4")
+infiniteMode = true
 
 [node name="BackgroundGrass" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(240, 135)
 scale = Vector2(30, 16.875)
-texture = ExtResource("1_xqw0f")
+texture = ExtResource("1_curxk")
 metadata/_edit_lock_ = true
 
 [node name="GrassAlt3" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(3.06667, 4.5037)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("2_pt48j")
+texture = ExtResource("2_w5axy")
 
 [node name="GrassAlt1" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(4.3, 4.32593)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("3_lpbq6")
+texture = ExtResource("3_epi4s")
 
 [node name="GrassAlt4" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(4.06667, -1.54074)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("4_mjh0c")
+texture = ExtResource("4_8ynq5")
 
 [node name="GrassPlant1" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(4.4, 5.15556)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
 [node name="GrassRockPlantTile1" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(6.16667, 5.45185)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("6_c7tst")
+texture = ExtResource("6_0reak")
 
 [node name="GrassRockTile1" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(2.06667, -1.12593)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("7_xv62f")
+texture = ExtResource("7_vy7tu")
 
 [node name="GrassRockTile2" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(7.5, -2.07407)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("8_crmyo")
+texture = ExtResource("8_13sqv")
 
 [node name="GrassAlt2" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(7.5, -4.68148)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("3_lpbq6")
+texture = ExtResource("3_epi4s")
 
 [node name="GrassAlt5" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(5.56667, -4.38519)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("9_agyld")
+texture = ExtResource("9_eey5r")
 
 [node name="GrassPlant2" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(2.6, -5.39259)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
 [node name="GrassPlant3" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(5.06667, -6.45926)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("10_6hjie")
+texture = ExtResource("10_pb3ft")
 
 [node name="GrassPlant4" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(5.6, 1.00741)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
 [node name="GrassPlant5" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(3.06667, 1.48148)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
 [node name="GrassPlant6" type="Sprite2D" parent="BackgroundGrass"]
 position = Vector2(7.1, 1.77778)
 scale = Vector2(0.0333333, 0.0592593)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
-[node name="PlayArea" parent="." instance=ExtResource("2_c3pih")]
+[node name="PlayArea" parent="." instance=ExtResource("11_sptuk")]
+z_index = -1
 position = Vector2(169, 16)
 metadata/_edit_lock_ = true
 
 [node name="Decor" type="Node2D" parent="."]
+z_index = -1
 metadata/_edit_lock_ = true
 
 [node name="PathStriaghtUp" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(225, 232)
-texture = ExtResource("4_jrf2h")
+texture = ExtResource("12_yx8dp")
 metadata/_edit_lock_ = true
 
 [node name="PathT2" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(225, 248)
-texture = ExtResource("5_dor5k")
+texture = ExtResource("13_iec0i")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(209, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways2" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(193, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways3" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(177, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways4" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(161, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways5" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(145, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways6" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(129, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathT3" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(113, 248)
-texture = ExtResource("5_dor5k")
+texture = ExtResource("13_iec0i")
 metadata/_edit_lock_ = true
 
 [node name="PathStriaghtUp2" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(113, 232)
-texture = ExtResource("4_jrf2h")
+texture = ExtResource("12_yx8dp")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways7" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(97, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways8" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(81, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways9" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(65, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways10" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(49, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways11" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(33, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways12" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(17, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways13" type="Sprite2D" parent="Decor"]
 texture_filter = 1
 position = Vector2(1, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="Light3" type="Sprite2D" parent="Decor"]
 position = Vector2(22, 222)
-texture = ExtResource("16_7c6ke")
+texture = ExtResource("15_1deoe")
 metadata/_edit_lock_ = true
 
 [node name="Light1" type="Sprite2D" parent="Decor"]
 position = Vector2(286, 222)
-texture = ExtResource("17_dxve5")
+texture = ExtResource("16_jchew")
 metadata/_edit_lock_ = true
 
 [node name="Light2" type="Sprite2D" parent="Decor"]
 position = Vector2(152, 223)
-texture = ExtResource("16_7c6ke")
+texture = ExtResource("15_1deoe")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways14" type="Sprite2D" parent="Decor"]
 position = Vector2(241, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways15" type="Sprite2D" parent="Decor"]
 position = Vector2(257, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways16" type="Sprite2D" parent="Decor"]
 position = Vector2(273, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathStraightSideways17" type="Sprite2D" parent="Decor"]
 position = Vector2(289, 248)
-texture = ExtResource("6_uawn8")
+texture = ExtResource("14_pgh0t")
 metadata/_edit_lock_ = true
 
 [node name="PathEndRight" type="Sprite2D" parent="Decor"]
 position = Vector2(305, 248)
-texture = ExtResource("18_5qljh")
+texture = ExtResource("17_ilqa1")
 metadata/_edit_lock_ = true
 
 [node name="Bush" type="Sprite2D" parent="Decor"]
 position = Vector2(20, 196)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="Bush2" type="Sprite2D" parent="Decor"]
 position = Vector2(44, 198)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="BushBerry" type="Sprite2D" parent="Decor"]
 position = Vector2(19, 174)
-texture = ExtResource("20_pr7ok")
+texture = ExtResource("19_0o2m6")
 metadata/_edit_lock_ = true
 
 [node name="Bush3" type="Sprite2D" parent="Decor"]
 position = Vector2(45, 175)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="BushBerry2" type="Sprite2D" parent="Decor"]
 position = Vector2(19, 157)
-texture = ExtResource("20_pr7ok")
+texture = ExtResource("19_0o2m6")
 metadata/_edit_lock_ = true
 
 [node name="BushBerry3" type="Sprite2D" parent="Decor"]
 position = Vector2(44, 157)
-texture = ExtResource("20_pr7ok")
+texture = ExtResource("19_0o2m6")
 metadata/_edit_lock_ = true
 
 [node name="Bush4" type="Sprite2D" parent="Decor"]
 position = Vector2(20, 138)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="Bush5" type="Sprite2D" parent="Decor"]
 position = Vector2(46, 137)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="BushBerry6" type="Sprite2D" parent="Decor"]
 position = Vector2(20, 117)
-texture = ExtResource("20_pr7ok")
+texture = ExtResource("19_0o2m6")
 metadata/_edit_lock_ = true
 
 [node name="BushBerry7" type="Sprite2D" parent="Decor"]
 position = Vector2(65, 135)
-texture = ExtResource("20_pr7ok")
+texture = ExtResource("19_0o2m6")
 metadata/_edit_lock_ = true
 
 [node name="Bush6" type="Sprite2D" parent="Decor"]
 position = Vector2(68, 157)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="Bush7" type="Sprite2D" parent="Decor"]
 position = Vector2(45, 115)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="Bush8" type="Sprite2D" parent="Decor"]
 position = Vector2(68, 116)
-texture = ExtResource("19_s4c6k")
+texture = ExtResource("18_vp4l6")
 metadata/_edit_lock_ = true
 
 [node name="Forest" type="Node2D" parent="."]
+z_index = -1
 metadata/_edit_lock_ = true
 
 [node name="Tree1" type="Sprite2D" parent="Forest"]
 texture_repeat = 2
 position = Vector2(342, 38)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree2" type="Sprite2D" parent="Forest"]
 position = Vector2(383, 49)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree3" type="Sprite2D" parent="Forest"]
 position = Vector2(308, 79)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree4" type="Sprite2D" parent="Forest"]
 position = Vector2(299, 25)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree5" type="Sprite2D" parent="Forest"]
 position = Vector2(343, 88)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree6" type="Sprite2D" parent="Forest"]
 position = Vector2(374, 88)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree7" type="Sprite2D" parent="Forest"]
 position = Vector2(440, 31)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree8" type="Sprite2D" parent="Forest"]
 position = Vector2(412, 24)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree9" type="Sprite2D" parent="Forest"]
 position = Vector2(421, 72)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree10" type="Sprite2D" parent="Forest"]
 position = Vector2(399, 109)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree11" type="Sprite2D" parent="Forest"]
 position = Vector2(321, 119)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree12" type="Sprite2D" parent="Forest"]
 position = Vector2(353, 130)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree13" type="Sprite2D" parent="Forest"]
 position = Vector2(301, 160)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree14" type="Sprite2D" parent="Forest"]
 position = Vector2(332, 166)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree15" type="Sprite2D" parent="Forest"]
 position = Vector2(363, 161)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree16" type="Sprite2D" parent="Forest"]
 position = Vector2(381, 134)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree17" type="Sprite2D" parent="Forest"]
 position = Vector2(398, 164)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree18" type="Sprite2D" parent="Forest"]
 position = Vector2(449, 78)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree19" type="Sprite2D" parent="Forest"]
 position = Vector2(426, 122)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree20" type="Sprite2D" parent="Forest"]
 position = Vector2(450, 134)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree21" type="Sprite2D" parent="Forest"]
 position = Vector2(424, 165)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree22" type="Sprite2D" parent="Forest"]
 position = Vector2(453, 185)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="GrassAlt1" type="Sprite2D" parent="Forest"]
 position = Vector2(99, 126)
-texture = ExtResource("3_lpbq6")
+texture = ExtResource("3_epi4s")
 
 [node name="GrassPlant1" type="Sprite2D" parent="Forest"]
 position = Vector2(131, 121)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
 [node name="GrassAlt3" type="Sprite2D" parent="Forest"]
 position = Vector2(98, 106)
-texture = ExtResource("2_pt48j")
+texture = ExtResource("2_w5axy")
 
 [node name="GrassAlt4" type="Sprite2D" parent="Forest"]
 position = Vector2(86, 87)
-texture = ExtResource("4_mjh0c")
+texture = ExtResource("4_8ynq5")
 
 [node name="GrassPlant2" type="Sprite2D" parent="Forest"]
 position = Vector2(141, 90)
-texture = ExtResource("5_ptwdc")
+texture = ExtResource("5_hotbx")
 
 [node name="GrassPlant3" type="Sprite2D" parent="Forest"]
 position = Vector2(113, 71)
-texture = ExtResource("10_6hjie")
+texture = ExtResource("10_pb3ft")
 
 [node name="Tree23" type="Sprite2D" parent="Forest"]
 position = Vector2(34, 61)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree24" type="Sprite2D" parent="Forest"]
 position = Vector2(20, 80)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree25" type="Sprite2D" parent="Forest"]
 position = Vector2(60, 78)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree26" type="Sprite2D" parent="Forest"]
 position = Vector2(101, 78)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree27" type="Sprite2D" parent="Forest"]
 position = Vector2(147, 23)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree28" type="Sprite2D" parent="Forest"]
 position = Vector2(160, 48)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree29" type="Sprite2D" parent="Forest"]
 position = Vector2(67, 21)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Tree30" type="Sprite2D" parent="Forest"]
 position = Vector2(17, 21)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree31" type="Sprite2D" parent="Forest"]
 position = Vector2(106, 23)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree32" type="Sprite2D" parent="Forest"]
 position = Vector2(78, 51)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree33" type="Sprite2D" parent="Forest"]
 position = Vector2(126, 61)
-texture = ExtResource("19_ndmfo")
+texture = ExtResource("20_fogb3")
 
 [node name="Tree34" type="Sprite2D" parent="Forest"]
 position = Vector2(147, 88)
-texture = ExtResource("20_mhpk1")
+texture = ExtResource("21_cwxrb")
 
 [node name="Church1" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(96, 185)
-texture = ExtResource("22_ekuf7")
+texture = ExtResource("22_5ltk5")
 metadata/_edit_lock_ = true
 
-[node name="Player" parent="." instance=ExtResource("23_3jiva")]
+[node name="Player" parent="." instance=ExtResource("23_q5ccu")]
 texture_filter = 1
 position = Vector2(225, 194)
 
-[node name="Skeleton" parent="." groups=["Enemies"] instance=ExtResource("24_k3g4n")]
-texture_filter = 1
-position = Vector2(226, 45)
-lives = 3
+[node name="WaveController" type="Node" parent="."]
+script = ExtResource("25_jkjld")
 
-[node name="Skeleton2" parent="." groups=["Enemies"] instance=ExtResource("24_k3g4n")]
-texture_filter = 1
-position = Vector2(194, 44)
-lives = 2
+[node name="Spawner" parent="WaveController" groups=["Spawners"] instance=ExtResource("25_ctucq")]
+position = Vector2(191, 47)
 
-[node name="Skeleton3" parent="." groups=["Enemies"] instance=ExtResource("24_k3g4n")]
-texture_filter = 1
-position = Vector2(259, 45)
-lives = 2
+[node name="Spawner2" parent="WaveController" groups=["Spawners"] instance=ExtResource("25_ctucq")]
+position = Vector2(207, 60)
 
-[node name="Skeleton4" parent="." groups=["Enemies"] instance=ExtResource("24_k3g4n")]
-texture_filter = 1
-position = Vector2(241, 67)
-lives = 2
+[node name="Spawner3" parent="WaveController" groups=["Spawners"] instance=ExtResource("25_ctucq")]
+position = Vector2(225, 47)
 
-[node name="Skeleton5" parent="." groups=["Enemies"] instance=ExtResource("24_k3g4n")]
-texture_filter = 1
-position = Vector2(209, 67)
-lives = 2
+[node name="Spawner4" parent="WaveController" groups=["Spawners"] instance=ExtResource("25_ctucq")]
+position = Vector2(243, 59)
 
-[node name="Skeleton6" parent="." groups=["Enemies"] instance=ExtResource("24_k3g4n")]
-texture_filter = 1
-position = Vector2(226, 88)
+[node name="Spawner5" parent="WaveController" groups=["Spawners"] instance=ExtResource("25_ctucq")]
+position = Vector2(259, 48)
 
-[connection signal="ready" from="VictoryCondition" to="Skeleton" method="connectSig"]
+[node name="Spawner6" parent="WaveController" groups=["Spawners"] instance=ExtResource("25_ctucq")]
+position = Vector2(224, 71)
+
+[connection signal="WaveKilled" from="VictoryCondition" to="WaveController" method="NextWave"]
+[connection signal="SpawnEnemy" from="WaveController" to="WaveController/Spawner" method="spawnEnemey"]
+[connection signal="SpawnEnemy" from="WaveController" to="WaveController/Spawner2" method="spawnEnemey"]
+[connection signal="SpawnEnemy" from="WaveController" to="WaveController/Spawner3" method="spawnEnemey"]
+[connection signal="SpawnEnemy" from="WaveController" to="WaveController/Spawner4" method="spawnEnemey"]
+[connection signal="SpawnEnemy" from="WaveController" to="WaveController/Spawner5" method="spawnEnemey"]
+[connection signal="SpawnEnemy" from="WaveController" to="WaveController/Spawner6" method="spawnEnemey"]

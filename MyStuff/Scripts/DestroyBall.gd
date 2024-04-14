@@ -12,3 +12,6 @@ func _process(_delta):
 
 func ballHit():
 	pass
+
+func LoseGame():
+	pass

@@ -25,7 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://c4ptwve1ogb4a" path="res://Imported assets/Cemetery/Structures/FenceMid.png" id="21_cgyq3"]
 [ext_resource type="Texture2D" uid="uid://rjgmx1ng4jme" path="res://Imported assets/Cemetery/Structures/FenceTopRight.png" id="21_ty87n"]
 [ext_resource type="Texture2D" uid="uid://dp4k0osnv1eil" path="res://Imported assets/Cemetery/Structures/FenceMidSide.png" id="24_mqixl"]
-[ext_resource type="Script" path="res://MyStuff/Classic mode/DestroyBall.gd" id="26_6hmx4"]
+[ext_resource type="Script" path="res://MyStuff/Scripts/DestroyBall.gd" id="26_6hmx4"]
 [ext_resource type="Texture2D" uid="uid://5cjkiewbby0e" path="res://Imported assets/Cemetery/Detailing/Grave1.png" id="26_guh47"]
 [ext_resource type="Texture2D" uid="uid://cv0e3x72khoto" path="res://Imported assets/Cemetery/Detailing/Grave2.png" id="27_0rd6k"]
 [ext_resource type="Texture2D" uid="uid://b5elhqrcpyiy3" path="res://Imported assets/Cemetery/Detailing/Grave3.png" id="28_psh0r"]

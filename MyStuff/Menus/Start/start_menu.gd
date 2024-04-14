@@ -16,7 +16,7 @@ func _on_classic_pressed():
 
 
 func _on_infinite_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://MyStuff/Infinite mode/Infinite_level.tscn")
 
 
 func _on_quit_pressed():

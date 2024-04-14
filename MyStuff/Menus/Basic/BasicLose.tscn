@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://6u2e0a5i7kp4"]
+
+[ext_resource type="Script" path="res://MyStuff/Menus/Basic/BasicWin.gd" id="1_6sa0s"]
+[ext_resource type="PackedScene" uid="uid://b8m4wgx4jqmxt" path="res://MyStuff/Menus/background.tscn" id="2_smwis"]
+
+[node name="basicDefeat" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6sa0s")
+
+[node name="Basic Level" parent="." instance=ExtResource("2_smwis")]
+metadata/_edit_lock_ = true
+
+[node name="Restart" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 2.0
+offset_right = 572.0
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 100
+text = "Restart"
+
+[node name="Menu" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 26.0
+offset_right = 593.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.15, 0.15)
+theme_override_font_sizes/font_size = 100
+text = "Main Menu"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.0
+offset_top = -34.0
+offset_right = 13.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Defeat"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

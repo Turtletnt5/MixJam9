@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://p2vec8uv0vtv" path="res://Imported assets/Cemetery/Grass/GrassRockTile2.png" id="8_8xrvt"]
 [ext_resource type="Texture2D" uid="uid://bycgddagllkyc" path="res://Imported assets/Cemetery/Grass/GrassAlt2.png" id="9_ifdj6"]
 [ext_resource type="Texture2D" uid="uid://dp0nmptg6y4wc" path="res://Imported assets/Cemetery/Grass/GrassPlant2.png" id="10_dv7fg"]
-[ext_resource type="PackedScene" uid="uid://dgqurvpqwdugy" path="res://MyStuff/Classic mode/play_area.tscn" id="11_8nrhf"]
+[ext_resource type="PackedScene" uid="uid://dgqurvpqwdugy" path="res://MyStuff/assets/play_area.tscn" id="11_jjhcr"]
 [ext_resource type="Texture2D" uid="uid://on1xihwufnxj" path="res://Imported assets/Cemetery/Path/pathStriaghtUp.png" id="12_pshne"]
 [ext_resource type="Texture2D" uid="uid://nex07rkdmsng" path="res://Imported assets/Cemetery/Path/PathT2.png" id="13_sbalt"]
 [ext_resource type="Texture2D" uid="uid://djrf37hxchn1e" path="res://Imported assets/Cemetery/Path/PathStraightSideways.png" id="14_oguw7"]
@@ -101,7 +101,7 @@ position = Vector2(7.1, 1.77778)
 scale = Vector2(0.0333333, 0.0592593)
 texture = ExtResource("5_lwq2n")
 
-[node name="PlayArea" parent="." instance=ExtResource("11_8nrhf")]
+[node name="PlayArea" parent="." instance=ExtResource("11_jjhcr")]
 position = Vector2(169, 16)
 metadata/_edit_lock_ = true
 

@@ -15,6 +15,8 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	LivesLabel.text = str(lives)
+	
+	
 
 func _physics_process(delta):
 	
@@ -35,7 +37,10 @@ func _physics_process(delta):
 		
 	
 	
-	move_and_slide()
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		if collision.get_collider().has_method("LoseGame"):
+			get_tree().call_group("victory", "MisstionFailed")
 	
 
 	if !animated_sprite.is_playing():
@@ -52,5 +57,13 @@ func Hit(normal):
 	LivesLabel.text = str(lives)
 	
 	if lives <= 0:
-		deathsignal.emit()
+		get_tree().call_group("victory", "killedEnemy")
 		queue_free()
+
+func start(_position):
+	position = _position
+	
+func setLife(_life):
+	lives = _life
+
+

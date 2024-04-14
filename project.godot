@@ -15,6 +15,10 @@ run/main_scene="res://MyStuff/Menus/Start/start_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+InfiniteGlobals="*res://MyStuff/Menus/Infinite/InfiniteGlobals.gd"
+
 [display]
 
 window/size/viewport_width=480

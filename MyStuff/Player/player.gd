@@ -53,5 +53,5 @@ func Attack():
 func AttackOffCoolDown():
 	AttackReady = true
 
-func ballHit():
+func LoseGame():
 	pass
